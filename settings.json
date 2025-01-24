@@ -36,5 +36,10 @@
   "ui_font_weight": 400,
   "buffer_font_family": "Monaspace Neon",
   "buffer_font_size": 12,
-  "buffer_font_weight": 400
+  "buffer_font_weight": 400,
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+    "line_width": 1
+  }
 }
