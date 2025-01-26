@@ -41,5 +41,16 @@
     "enabled": true,
     "coloring": "indent_aware",
     "line_width": 1
-  }
+  },
+  "inlay_hints": {
+    "enabled": false,
+    "show_type_hints": false,
+    "show_parameter_hints": false,
+    "show_other_hints": false,
+    "show_background": false,
+    "edit_debounce_ms": 700,
+    "scroll_debounce_ms": 50
+  },
+  "auto_signature_help": true,
+  "show_signature_help_after_edits": true
 }
