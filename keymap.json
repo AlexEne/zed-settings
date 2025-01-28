@@ -27,7 +27,14 @@
       "ctrl-y": "editor::Undo", // vim default: line up
       "ctrl-f": "buffer_search::Deploy", // vim default: page down
       "ctrl-o": "workspace::Open", // vim default: go back
-      "ctrl-a": "editor::SelectAll" // vim default: increment
+      "ctrl-a": "editor::SelectAll", // vim default: increment
+      "alt-shift-f": "editor::Format"
+    }
+  },
+  {
+    "context": "Editor && mode == full",
+    "bindings": {
+      "ctrl-f3": "buffer_search::Deploy"
     }
   }
 ]
