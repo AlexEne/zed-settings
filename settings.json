@@ -18,7 +18,7 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 12,
+  "ui_font_size": 14,
   "ui_font_family": "Monaspace Neon",
   "theme": {
     "mode": "system",
@@ -32,11 +32,12 @@
     "liga": true
   },
   "autosave": "on_focus_change",
+  "always_treat_brackets_as_autoclosed": true,
   "format_on_save": "off",
   "ui_font_weight": 400,
   "buffer_font_family": "Monaspace Neon",
-  "buffer_font_size": 12,
-  "buffer_font_weight": 400,
+  "buffer_font_size": 14,
+  "buffer_font_weight": 500,
   "indent_guides": {
     "enabled": true,
     "coloring": "indent_aware",
@@ -51,6 +52,12 @@
     "edit_debounce_ms": 700,
     "scroll_debounce_ms": 50
   },
+  "project_panel": {
+    "auto_reveal_entries": true
+  },
   "auto_signature_help": true,
-  "show_signature_help_after_edits": true
+  "show_signature_help_after_edits": true,
+  "terminal": {
+    "font_size": 12
+  }
 }
