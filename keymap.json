@@ -10,7 +10,8 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-      "cmd-r": "terminal_panel::ToggleFocus"
+      "cmd-r": "terminal_panel::ToggleFocus",
+      "cmd-shift-a": "workspace::ToggleRightDock"
     }
   },
   {
@@ -29,7 +30,7 @@
       "ctrl-f": "buffer_search::Deploy", // vim default: page down
       "ctrl-o": "workspace::Open", // vim default: go back
       "ctrl-a": "editor::SelectAll", // vim default: increment
-      "alt-shift-f": "editor::Format"
+      "cmd-shift-f": "editor::Format"
     }
   },
   {
