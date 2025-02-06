@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "icon_theme": "Material Icon Theme",
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
@@ -14,11 +15,15 @@
     },
     "version": "2"
   },
+  "chat_panel": {
+    "default_width": 356,
+    "button": "always"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 14,
+  "ui_font_size": 12,
   "ui_font_family": "Monaspace Neon",
   "theme": {
     "mode": "system",
@@ -31,13 +36,14 @@
     "calt": true,
     "liga": true
   },
+  "restore_on_startup": "last_workspace",
   "autosave": "on_focus_change",
   "always_treat_brackets_as_autoclosed": true,
   "format_on_save": "off",
   "ui_font_weight": 400,
   "buffer_font_family": "Monaspace Neon",
-  "buffer_font_size": 14,
-  "buffer_font_weight": 500,
+  "buffer_font_size": 12.0,
+  "buffer_font_weight": 400,
   "indent_guides": {
     "enabled": true,
     "coloring": "indent_aware",
@@ -55,8 +61,8 @@
   "project_panel": {
     "auto_reveal_entries": true
   },
-  "auto_signature_help": true,
-  "show_signature_help_after_edits": true,
+  // "auto_signature_help": true,
+  // "show_signature_help_after_edits": true,
   "terminal": {
     "font_size": 12
   }
