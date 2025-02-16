@@ -15,12 +15,6 @@
     }
   },
   {
-    "context": "Editor",
-    "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
-    }
-  },
-  {
     "context": "Editor && !menu",
     "bindings": {
       "ctrl-c": "editor::Copy", // vim default: return to normal mode
@@ -31,13 +25,39 @@
       "ctrl-o": "workspace::Open", // vim default: go back
       "ctrl-a": "editor::SelectAll", // vim default: increment
       "alt-shift-f": "editor::Format",
-      "cmd-shift-i": "workspace::ToggleRightDock"
+      "cmd-shift-i": "workspace::ToggleRightDock",
+      "cmd-r": "workspace::ToggleBottomDock"
     }
   },
   {
-    "context": "Editor && mode == full",
+    "context": "VimControl && !menu",
     "bindings": {
-      "ctrl-f3": "buffer_search::Deploy"
+      // Put key bindings here if you want them to work in normal & visual mode.
+      "space l l": "diagnostics::Deploy",
+      "space f": "file_finder::Toggle",
+      "space o": "tab_switcher::Toggle",
+      "space p": "outline::Toggle",
+      "space v": "editor::GoToDefinitionSplit"
+   }
+  },
+  {
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      // "shift-y": ["workspace::SendKeystrokes", "y $"] // Use neovim's yank behavior: yank to end of line.
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore" // In insert mode, make jk escape to normal mode.
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      // Put key bindings here (in addition to the context above) if you want them to
+      // work when no editor exists.
+      // "space f": "file_finder::Toggle"
     }
   }
 ]
