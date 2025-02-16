@@ -60,6 +60,11 @@
     "edit_debounce_ms": 700,
     "scroll_debounce_ms": 50
   },
+  "scrollbar": {
+    "axes": {
+      "horizontal": false
+    }
+  },
   "project_panel": {
     "auto_reveal_entries": true
   },
