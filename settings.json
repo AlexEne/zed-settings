@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Material Icon Theme",
+  "icon_theme": "Catppuccin Mocha",
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
@@ -15,6 +15,7 @@
     },
     "version": "2"
   },
+  "remove_trailing_whitespace_on_save": false,
   "chat_panel": {
     "default_width": 356,
     "button": "always"
@@ -49,6 +50,7 @@
     "coloring": "indent_aware",
     "line_width": 1
   },
+  "relative_line_numbers": true,
   "inlay_hints": {
     "enabled": false,
     "show_type_hints": false,
@@ -64,6 +66,7 @@
   // "auto_signature_help": true,
   // "show_signature_help_after_edits": true,
   "terminal": {
-    "font_size": 12
+    "font_size": 11,
+    "font_family": "Monaspace Neon"
   }
 }
