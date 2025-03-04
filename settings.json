@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": "Colored Zed Icons Theme Dark",
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
@@ -24,7 +24,6 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 12,
   "ui_font_family": "Monaspace Neon",
   "theme": {
     "mode": "system",
@@ -41,10 +40,11 @@
   "autosave": "on_focus_change",
   "always_treat_brackets_as_autoclosed": true,
   "format_on_save": "off",
-  "ui_font_weight": 400,
+  "ui_font_size": 13,
+  "ui_font_weight": 600,
   "buffer_font_family": "Monaspace Neon",
-  "buffer_font_size": 12.0,
-  "buffer_font_weight": 400,
+  "buffer_font_size": 14.0,
+  "buffer_font_weight": 600,
   "indent_guides": {
     "enabled": true,
     "coloring": "indent_aware",
@@ -73,5 +73,15 @@
   "terminal": {
     "font_size": 11,
     "font_family": "Monaspace Neon"
+  },
+  "diagnostics": {
+    "include_warnings": false,
+    "inline": {
+      "enabled": true,
+      "update_debounce_ms": 150,
+      "padding": 4,
+      "min_column": 0,
+      "max_severity": null
+    }
   }
 }
