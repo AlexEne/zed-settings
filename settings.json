@@ -16,7 +16,7 @@
     "version": "2"
   },
   "experimental.theme_overrides": {
-    "background": "#00000060",
+    "background": "#00000080",
     "background.appearance": "blurred",
     "panel.background": "#00000000",
     "editor.background": "#00000000",
