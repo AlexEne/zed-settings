@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
   "icon_theme": "Colored Zed Icons Theme Dark",
   "assistant": {
     "default_model": {
@@ -16,14 +19,14 @@
     "version": "2"
   },
   "experimental.theme_overrides": {
-    "background": "#00000080",
+    "background": "#000000DD",
     "background.appearance": "blurred",
     "panel.background": "#00000000",
     "editor.background": "#00000000",
     "terminal.background": "#00000000",
-    "title_bar.background": "#000000AA",
+    "title_bar.background": "#000000CA",
     "editor.gutter.background": "#00000000",
-    "status_bar.background": "#00000080",
+    "status_bar.background": "#000000C0",
     "tab_bar.background": "#00000000",
     "toolbar.background": "#00000040",
     "warning.background": "#000000CF",
@@ -68,9 +71,10 @@
     "coloring": "indent_aware",
     "line_width": 1
   },
+  "vertical_scroll_margin": 8,
   "relative_line_numbers": true,
   "inlay_hints": {
-    "enabled": false,
+    "enabled": true,
     "show_type_hints": false,
     "show_parameter_hints": false,
     "show_other_hints": false,
@@ -95,7 +99,7 @@
   "diagnostics": {
     "include_warnings": false,
     "inline": {
-      "enabled": true,
+      "enabled": false,
       "update_debounce_ms": 150,
       "padding": 4,
       "min_column": 0,
