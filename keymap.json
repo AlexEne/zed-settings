@@ -11,8 +11,8 @@
     "bindings": {
       // "shift shift": "file_finder::Toggle"
       // "cmd-r": "workspace::ToggleBottomDock",
-      "cmd-r": "terminal_panel::ToggleFocus",
-      "cmd-shift-i": "workspace::ToggleRightDock"
+      "secondary-r": "terminal_panel::ToggleFocus",
+      "secondary-shift-i": "workspace::ToggleRightDock"
     }
   },
   {
@@ -26,7 +26,8 @@
       "ctrl-o": "workspace::Open", // vim default: go back
       "ctrl-a": "editor::SelectAll", // vim default: increment
       "alt-shift-f": "editor::Format",
-      "cmd-shift-i": "workspace::ToggleRightDock",
+      "secondary-shift-i": "workspace::ToggleRightDock"
+
       // "cmd-r": "workspace::ToggleBottomDock"
     }
   },
@@ -39,7 +40,7 @@
       "space o": "tab_switcher::Toggle",
       "space p": "outline::Toggle",
       "space v": "editor::GoToDefinitionSplit",
-      "space t": "terminal_panel::ToggleFocus"
+      "space r": "editor::FindAllReferences"
     }
   },
   {
@@ -52,6 +53,17 @@
     "context": "vim_mode == insert",
     "bindings": {
       // "j k": "vim::NormalBefore" // In insert mode, make jk escape to normal mode.
+    }
+  },
+  {
+    "context": "",
+    "bindings": {
+      "F10": "debugger::StepOver",
+      "F5": "debugger::Continue",
+      "shift-F5": "debugger::Stop",
+      "F9": "editor::ToggleBreakpoint",
+      "F11": "debugger::StepInto",
+      "shift-F11": "debugger::StepOut"
     }
   },
   {
@@ -71,10 +83,22 @@
   {
     "context": "Editor || Workspace",
     "bindings": {
-      "cmd-alt-left": "workspace::SwapPaneLeft",
-      "cmd-alt-right": "workspace::SwapPaneRight",
-      "cmd-alt-up": "workspace::SwapPaneUp",
-      "cmd-alt-down": "workspace::SwapPaneDown"
+      "secondary-alt-left": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "left" }
+      ],
+      "secondary-alt-right": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "right" }
+      ],
+      "secondary-alt-up": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "up" }
+      ],
+      "secondary-alt-down": [
+        "workspace::MoveItemToPaneInDirection",
+        { "direction": "down" }
+      ]
     }
   }
 ]
