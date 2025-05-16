@@ -10,7 +10,8 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-      "cmd-r": "workspace::ToggleBottomDock",
+      // "cmd-r": "workspace::ToggleBottomDock",
+      "cmd-r": "terminal_panel::ToggleFocus",
       "cmd-shift-i": "workspace::ToggleRightDock"
     }
   },
@@ -26,7 +27,7 @@
       "ctrl-a": "editor::SelectAll", // vim default: increment
       "alt-shift-f": "editor::Format",
       "cmd-shift-i": "workspace::ToggleRightDock",
-      "cmd-r": "workspace::ToggleBottomDock"
+      // "cmd-r": "workspace::ToggleBottomDock"
     }
   },
   {
@@ -37,8 +38,9 @@
       "space f": "file_finder::Toggle",
       "space o": "tab_switcher::Toggle",
       "space p": "outline::Toggle",
-      "space v": "editor::GoToDefinitionSplit"
-   }
+      "space v": "editor::GoToDefinitionSplit",
+      "space t": "terminal_panel::ToggleFocus"
+    }
   },
   {
     "context": "vim_mode == normal && !menu",
@@ -58,6 +60,21 @@
       // Put key bindings here (in addition to the context above) if you want them to
       // work when no editor exists.
       // "space f": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-r": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor || Workspace",
+    "bindings": {
+      "cmd-alt-left": "workspace::SwapPaneLeft",
+      "cmd-alt-right": "workspace::SwapPaneRight",
+      "cmd-alt-up": "workspace::SwapPaneUp",
+      "cmd-alt-down": "workspace::SwapPaneDown"
     }
   }
 ]
