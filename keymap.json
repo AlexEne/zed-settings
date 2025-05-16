@@ -81,7 +81,7 @@
     }
   },
   {
-    "context": "Editor || Workspace",
+    "context": "Editor || Workspace || Terminal",
     "bindings": {
       "secondary-alt-left": [
         "workspace::MoveItemToPaneInDirection",
