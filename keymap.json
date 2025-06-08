@@ -12,7 +12,8 @@
       // "shift shift": "file_finder::Toggle"
       // "cmd-r": "workspace::ToggleBottomDock",
       "secondary-r": "terminal_panel::ToggleFocus",
-      "secondary-shift-i": "workspace::ToggleRightDock"
+      "secondary-shift-i": "workspace::ToggleRightDock",
+      "secondary-b": "workspace::ToggleBottomDock"
     }
   },
   {
@@ -26,7 +27,8 @@
       "ctrl-o": "workspace::Open", // vim default: go back
       "ctrl-a": "editor::SelectAll", // vim default: increment
       "alt-shift-f": "editor::Format",
-      "secondary-shift-i": "workspace::ToggleRightDock"
+      "secondary-shift-i": "workspace::ToggleRightDock",
+      "secondary-e": "workspace::ToggleLeftDock"
 
       // "cmd-r": "workspace::ToggleBottomDock"
     }
