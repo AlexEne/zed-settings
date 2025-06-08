@@ -13,7 +13,8 @@
       // "cmd-r": "workspace::ToggleBottomDock",
       "secondary-r": "terminal_panel::ToggleFocus",
       "secondary-shift-i": "workspace::ToggleRightDock",
-      "secondary-b": "workspace::ToggleBottomDock"
+      "secondary-b": "workspace::ToggleBottomDock",
+      "secondary-e": "workspace::ToggleLeftDock"
     }
   },
   {
