@@ -74,7 +74,7 @@
     "liga": true
   },
   "restore_on_startup": "last_workspace",
-  "autosave": "on_focus_change",
+  "autosave": { "after_delay": { "milliseconds": 500 } },
   "always_treat_brackets_as_autoclosed": true,
   "format_on_save": "off",
   "ui_font_weight": 400,
