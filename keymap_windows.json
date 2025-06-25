@@ -28,7 +28,8 @@
       // "ctrl-alt-down": "editor::AddSelectionBelow",
       "alt-left": "pane::GoBack",
       "alt-right": "pane::GoForward",
-      
+      "shift-alt-up": "editor::AddSelectionAbove", // Insert cursor above
+      "shift-alt-down": "editor::AddSelectionBelow" // Insert cursor below
     }
   },
   {
