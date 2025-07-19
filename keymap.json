@@ -7,6 +7,32 @@
 // from the command palette.
 [
   {
+    "context": "",
+    "use_key_equivalents": true,
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      // "cmd-r": "workspace::ToggleBottomDock",
+      "secondary-r": "terminal_panel::ToggleFocus",
+      "secondary-shift-i": "workspace::ToggleRightDock",
+      "ctrl-w": ["pane::CloseActiveItem", { "close_pinned": false }],
+      "ctrl-1": ["workspace::ActivatePane", 0],
+      "ctrl-2": ["workspace::ActivatePane", 1],
+      "ctrl-3": ["workspace::ActivatePane", 2],
+      "ctrl-4": ["workspace::ActivatePane", 3],
+      "ctrl-5": ["workspace::ActivatePane", 4],
+      "ctrl-6": ["workspace::ActivatePane", 5],
+      "ctrl-7": ["workspace::ActivatePane", 6],
+      "ctrl-8": ["workspace::ActivatePane", 7],
+      "ctrl-9": ["workspace::ActivatePane", 8],
+      // "ctrl-alt-up": "editor::AddSelectionAbove",
+      // "ctrl-alt-down": "editor::AddSelectionBelow",
+      "alt-left": "pane::GoBack",
+      "alt-right": "pane::GoForward",
+      "shift-alt-up": "editor::AddSelectionAbove", // Insert cursor above
+      "shift-alt-down": "editor::AddSelectionBelow" // Insert cursor below
+    }
+  },
+  {
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
