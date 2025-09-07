@@ -13,13 +13,13 @@
   },
   "icon_theme": "Catppuccin Latte",
   "agent": {
-    "default_profile": "ask",
+    "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4"
-    },
-    "version": "2"
+    }
   },
+  "auto_signature_help": true,
   "lsp": {
     "rust-analyzer": {
       "initialization_options": {
@@ -60,11 +60,11 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 13,
+  "ui_font_size": 14,
   "ui_font_family": "Monaspace Neon",
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Mocha - No Italics",
+    "light": "Ayu Dark",
     "dark": "Catppuccin Mocha - No Italics"
   },
   "scroll_sensitivity": 0.75,
@@ -74,13 +74,13 @@
     "liga": true
   },
   "restore_on_startup": "last_workspace",
-  "autosave": { "after_delay": { "milliseconds": 500 } },
+  "autosave": { "after_delay": { "milliseconds": 1000 } },
   "always_treat_brackets_as_autoclosed": true,
   "format_on_save": "off",
   "ui_font_weight": 400,
   "buffer_font_family": "Monaspace Neon",
   "buffer_font_size": 14.0,
-  "buffer_font_weight": 300,
+  "buffer_font_weight": 450,
   "indent_guides": {
     "enabled": true,
     "coloring": "indent_aware",
@@ -124,6 +124,11 @@
       "padding": 4,
       "min_column": 0,
       "max_severity": null
+    }
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["!pylsp", "pyright"]
     }
   }
 }
