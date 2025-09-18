@@ -12,7 +12,6 @@
     "bindings": {
       // "shift shift": "file_finder::Toggle"
       // "cmd-r": "workspace::ToggleBottomDock",
-      "secondary-r": "terminal_panel::ToggleFocus",
       "secondary-shift-i": "workspace::ToggleRightDock",
       "ctrl-w": ["pane::CloseActiveItem", { "close_pinned": false }],
       "ctrl-1": ["workspace::ActivatePane", 0],
@@ -37,7 +36,6 @@
     "bindings": {
       // "shift shift": "file_finder::Toggle"
       // "cmd-r": "workspace::ToggleBottomDock",
-      "secondary-r": "terminal_panel::ToggleFocus",
       "secondary-shift-i": "workspace::ToggleRightDock",
       "secondary-b": "workspace::ToggleBottomDock",
       "secondary-e": "workspace::ToggleLeftDock"
@@ -104,9 +102,9 @@
     }
   },
   {
-    "context": "Terminal",
+    "context": "Workspace",
     "bindings": {
-      "ctrl-r": "terminal_panel::ToggleFocus"
+      "cmd-r": "terminal_panel::Toggle"
     }
   },
   {
@@ -128,6 +126,18 @@
         "workspace::MoveItemToPaneInDirection",
         { "direction": "down" }
       ]
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "alt-cmd-r": null
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-i": "workspace::ToggleRightDock"
     }
   }
 ]
